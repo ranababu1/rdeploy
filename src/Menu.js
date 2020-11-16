@@ -5,7 +5,7 @@ const Menu = () => {
     return (
         <nav>
             <div class="container nav-wrapper">
-                <a href="#" class="brand-logo">Deno</a>
+                <a href="#" class="brand-logo">IWS RED</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/about">About</Link></li> 
@@ -15,7 +15,6 @@ const Menu = () => {
         </nav>
     )
 }
-
 export default Menu;
 
 
