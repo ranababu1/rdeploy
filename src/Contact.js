@@ -18,6 +18,7 @@ const Contact = () => {
                         <div className="card-action">
                             <a href="https://imraan.in">My Blog</a>
                             <a href="https://iws.agency">IWS Agency</a>
+                            <a href="https://stayfit.pro">Stayfit Pro</a>
                         </div>
                     </div>
                 </div>
