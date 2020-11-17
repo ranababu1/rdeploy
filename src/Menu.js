@@ -5,7 +5,7 @@ const Menu = () => {
     return (
         <nav>
             <div className="container nav-wrapper">
-            <Link className="brand-logo hide-on-med-and-down" to="/">Imraan's Blog</Link>
+            <Link className="logo hide-on-med-and-down" to="/">Imraan's Blog</Link>
                 <ul id="nav-mobile" class="right">
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/about">About</Link></li> 
