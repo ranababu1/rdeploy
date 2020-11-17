@@ -55,12 +55,20 @@ p{
 
 @media (min-width:961px)  {
   .titleText{
-    font-size: 6rem !important;
-    font-weight: bold;
+    font-size: 2rem !important;
+    font-weight: bold!important;
     letter-spacing: 3px;
+    color: #02325f!important;
+  }
+  .padding30{
+    padding: 30px;
+  }
+  hr{
+    width: 75%;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 }
-
 
 a{
   color: #02325f !important;
@@ -85,10 +93,6 @@ nav ul a{
   border-radius: 10px;
 }
 
-.padding30{
-  padding: 30px;
-}
-
 .imageofHero{
   border-radius: 10px;
   -webkit-box-shadow: 3px 5px 20px 2px #000000;
@@ -97,11 +101,20 @@ nav ul a{
   max-height: 600px;
 
 }
-.imgWrapper{
-  display: block;
+
+@media (max-width:960px)  {
+
+  .imgWrapper{
+    padding-top: 20px;
+  }
 }
 
-/* .imageofImr img{
-  max-height: 400px;
-  max-width: auto;
-} */
+
+.faIcons{
+  margin-right: 20px;
+}
+
+.basicInfo li{
+  font-size: 2rem;
+  line-height: 2;
+}
