@@ -52,14 +52,18 @@ p{
   font-size: 20px;
 }
 
-.titleText{
-  font-size: 6rem !important;
-  font-weight: bold;
-  letter-spacing: 3px;
+
+@media (min-width:961px)  {
+  .titleText{
+    font-size: 6rem !important;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
 }
 
+
 a{
-  color: #039be5 !important;
+  color: #02325f !important;
   font-size: 18px;
   font-weight: bolder;
 }
@@ -69,7 +73,8 @@ nav{
 }
 
 nav ul a{
-  font-size: 1.7rem !important;
+  color: #f1c40f;
+  font-size: 1.5rem !important;
   font-weight: bold;
 
 }
@@ -78,6 +83,22 @@ nav ul a{
   -webkit-box-shadow: 3px 5px 20px 2px #000000;
   box-shadow: 3px 5px 20px -4px #000000;
   border-radius: 10px;
+}
+
+.padding30{
+  padding: 30px;
+}
+
+.imageofHero{
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 5px 20px 2px #000000;
+  box-shadow: 3px 5px 20px -4px #000000;
+  border-radius: 10px;
+  max-height: 600px;
+
+}
+.imgWrapper{
+  display: block;
 }
 
 /* .imageofImr img{
