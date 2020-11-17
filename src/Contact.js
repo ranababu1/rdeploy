@@ -9,11 +9,11 @@ const Contact = () => {
                 <div className="col s8">
                     <div className="card">
                         <div className="card-image imageofImr">
-                            <img className="responsive-img " src="https://imraan.in/wp-content/uploads/2020/04/imraan_optimized.jpg" alt="contact us" />
-                            <span className="card-title titleText">Imran</span>
+                            <img className="responsive-img " src="https://assets.justinmind.com/wp-content/webp-express/webp-images/uploads/2017/08/prototyping-7-simple-login-forms-for-web-mobile-apps.png.webp" alt="contact us" />
+                            <span className="card-title titleText">Contact Form coming soon</span>
                         </div>
                         <div className="card-content">
-                            <p className="App-link ">Check out my projects</p>
+                            <p className="App-link ">Meanwhile check out my projects</p>
                         </div>
                         <div className="card-action">
                             <a href="https://imraan.in">My Blog</a>
