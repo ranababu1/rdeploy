@@ -1,5 +1,8 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronLeft, faChevronRight} from '@fortawesome/free-solid-svg-icons'
+import Sidebar from './blogs/Sidebar'
 const Blog = () => {
 return (
 <div className="contentPart">
@@ -7,21 +10,25 @@ return (
         <div className="row">
             <div className="col s12 m8">
                 <h3 className="header">Recent Posts</h3>
-                <div className="card hoverable">
-                    <div className="card-image">
-                        <img
-                            src="https://thumbs.dreamstime.com/b/banner-background-colorful-holi-powder-snow-multiple-colors-surface-146214908.jpg" />
-                    </div>
-                    <div className="card-stacked colorGrey">
-                        <div className="card-content">
-                            <h4>Title of the post</h4>
-                        </div>
 
+                <Link to="/blog/blog1">
+                    <div className="card hoverable">
+                        <div className="card-image">
+                            <img alt="blog Image"
+                                src="https://thumbs.dreamstime.com/b/banner-background-colorful-holi-powder-snow-multiple-colors-surface-146214908.jpg" />
+                        </div>
+                        <div className="card-stacked colorGrey">
+                            <div className="card-content">
+                                <h4>How to cancel a sent email in gmail</h4>
+                            </div>
+
+                        </div>
                     </div>
-                </div>
+                </Link>
+                <Link to="/blog/blog2">
                 <div className="card hoverable">
                     <div className="card-image">
-                        <img
+                        <img alt="blog Image"
                             src="https://thumbs.dreamstime.com/b/banner-background-colorful-holi-powder-snow-multiple-colors-surface-146214908.jpg" />
                     </div>
                     <div className="card-stacked colorGrey">
@@ -32,9 +39,11 @@ return (
 
                     </div>
                 </div>
+            </Link>
+            <Link to="/blog/blog3">
                 <div className="card hoverable">
                     <div className="card-image">
-                        <img
+                        <img alt="blog Image"
                             src="https://thumbs.dreamstime.com/b/banner-background-colorful-holi-powder-snow-multiple-colors-surface-146214908.jpg" />
                     </div>
                     <div className="card-stacked colorGrey">
@@ -44,9 +53,11 @@ return (
 
                     </div>
                 </div>
+            </Link>
+            <Link to="/blog/blog4">
                 <div className="card hoverable">
                     <div className="card-image">
-                        <img
+                        <img alt="blog Image"
                             src="https://thumbs.dreamstime.com/b/banner-background-colorful-holi-powder-snow-multiple-colors-surface-146214908.jpg" />
                     </div>
                     <div className="card-stacked colorGrey">
@@ -57,9 +68,10 @@ return (
 
                     </div>
                 </div>
+            </Link>
                 <div className="card hoverable">
                     <div className="card-image">
-                        <img
+                        <img alt="blog Image"
                             src="https://thumbs.dreamstime.com/b/banner-background-colorful-holi-powder-snow-multiple-colors-surface-146214908.jpg" />
                     </div>
                     <div className="card-stacked colorGrey">
@@ -72,27 +84,22 @@ return (
                 </div>
             </div>
             <div className="col s12 m4">
-                <h3 className="header">Topics</h3>
-                <div className="sidebar">
-                    <p>Tech Updates</p>
-                    <p>TIL</p>
-                    <p>Gadget Updates</p>
-                    <p>DIY</p>
-                </div>
-                <h4 className="header">Newsletter</h4>
-                <div className="sidebar">
-                    <p>Enter you email to get free updates</p>
-                    <p>Email Input Box</p>
-                </div>
-                <h4 className="header">Ad Space</h4>
-                <div className="sidebar">
-                    <p>Adsense Box goes here</p>
-                </div>
+                <Sidebar />
             </div>
+        </div>
+    </div>
+    <div className="white pagi">
+        <div className="container">
+        <ul className="pagination">
+            <li className="disabled"><a href="#!"><FontAwesomeIcon className = "faIcons" icon={faChevronLeft} /></a></li>
+            <li className="active"><a href="#!">1</a></li>
+            <li className="waves-effect"><a href="#!">2</a></li>
+            <li className="waves-effect"><a href="#!">3</a></li>
+            <li className="waves-effect"><a href="#!"><FontAwesomeIcon className = "faIcons" icon={faChevronRight} /></a></li>
+          </ul>
         </div>
     </div>
 </div>
 )
 }
-
 export default Blog;
